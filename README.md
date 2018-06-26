@@ -1,6 +1,7 @@
 # reg-input
 запрет ввода, цифр, букв, мульти
 
+<pre>
 // Только русс буквы
 $("[name=langrus]").bind("change keyup input click", function() {
 	if (this.value.match(/[^а-яА-Я\s]/g)) {
@@ -21,3 +22,4 @@ $("[name=number]").bind("change keyup input click", function() {
 		this.value = this.value.replace(/[^0-9]/g, "");
 	}
 });
+</pre>
